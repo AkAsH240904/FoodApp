@@ -1,0 +1,182 @@
+.middle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.login{
+  background-color: rgba(255, 255, 255, 0.305);
+  width: 600px;
+  height: 560px;
+  margin-left: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.pass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+
+}
+input{
+  width: 50%;
+  height: 49px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 40px;
+}
+
+.carousel-inner {
+    height: 1600px; /* Adjust as needed */
+  }
+  .carousel-item img {
+    object-fit: cover;
+  }
+
+.carouselL{
+    width: 500%;
+    height: 500vh;
+}
+
+.home {
+    background-image: url('./yellow.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 95%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.whole{
+    background-size: cover;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-left: 800px;
+    margin-bottom: 200px;
+}
+
+.cccontainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(218, 201, 201, 0.185);
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    border-radius: 50px;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 495px;
+    height: 350px;
+    text-align: center; /* Center text below the image */
+    margin-top: 50px;
+    margin-right: 55px;
+    border-radius: 18px;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Moves the card up slightly */
+    border-color: rgb(222, 144, 9); /* Changes the border color to yellow */
+    cursor: pointer;
+    border-width: 5px;
+  }
+  
+  .card-detail{
+    padding: 20px;
+  }
+  
+  .card-image {
+    width: 492px;
+    height: 350px; /* Adjust image height */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 18px; /* Optional: rounded corners */
+    border-top-right-radius: 18px;
+    border-color: black;
+  }
+  
+  .card-title {
+    margin-top: 5px;
+    font-size: 26px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+  }
+  
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    width: 60px; /* Initial width (collapsed) */
+    height: 7vh;
+    cursor: pointer;
+    margin-left: 700px;
+    
+}
+.search-box:hover{
+    transform: scale(1.1);
+    transition: all 0.8s ease-out;
+    overflow: hidden;
+    cursor: pointer;
+ }
+  
+  .search-box.open {
+    width: 600px;
+    font-size: 50px;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    width: 100%; /* Adjust input to occupy full space */
+  }
+  
+  
+  .search-btn,
+  .close-btn {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+  }
+  

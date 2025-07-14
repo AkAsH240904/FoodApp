@@ -1,0 +1,64 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    background-image: url('yellow.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+/* Ensure dialog appears above other content */
+.custom-dialog-container {
+    position: fixed !important;
+    z-index: 1000 !important;
+  }
+  
+  /* Optional: Style the backdrop */
+  .dialog-backdrop {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.brand-name{
+    margin-left: 50px;
+    cursor: pointer;
+}
+.cart-container {
+    position: relative;
+    width: 1500px;
+    height: 50px;
+    overflow: hidden; /* Ensure the cart doesn't overflow the container */
+    left: 0; /* Align to the start of the parent */
+    margin-left: 400px;
+}
+
+@keyframes move-cart {
+    from {
+        left: 0; /* Start from the beginning */
+    }
+    to {
+        left: 1400px; /* Move to the desired end position */
+    }
+}
+
+.logo {
+    width: 40px; /* Adjust size for visibility */
+    height: 40px;
+    position: absolute;
+    animation: move-cart 2s ease-in-out forwards;
+    cursor: pointer;
+}
+.profile-logo {
+    width: 40px; /* Adjust size for visibility */
+    height: 40px;
+    cursor: pointer;
+}

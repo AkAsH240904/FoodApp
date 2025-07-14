@@ -1,0 +1,35 @@
+<div *ngIf="(cartSize$ | async) as cartSize">
+  <div *ngIf="cartSize > 0; else emptyCart">
+    <!-- cart has items -->
+    <div class="bill">
+      <div class="itemList">
+        <div class="boxx" *ngFor="let item of myBucket$ | async">
+          <div class="imag" [ngStyle]="{'background-image': 'url(' + item.strMealThumb + ')'}"></div>
+          <div class="namePrice">
+            <h1 class="foodName">{{ item.strMeal }} X {{ item.quantity }}</h1>
+            <h2 class="price">Rs.{{ item.price * item.quantity }}</h2>
+          </div>
+          <div class="butt">
+            <button type="button" class="pluss btn btn-success" (click)="increment(item)">+</button>
+            <button type="button" class="btn btn-danger" (click)="decrement(item)">-</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout">
+        <h2 style="margin-bottom: 30px;"><u>Your Bill</u></h2>
+        <div *ngFor="let item of myBucket$ | async">
+          <h3>{{ item.strMeal }} X {{ item.quantity }} = Rs.{{ item.price * item.quantity }}</h3>
+        </div>
+        <h2 style="margin-top: 40px;">Total: Rs. {{ totalPrice$ | async }}</h2>
+        <button class="placeOrder btn btn-outline-success">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <div class="cart-empty">
+      <h1>Your Cart Is Empty!</h1>
+    </div>
+  </ng-template>
+</div>

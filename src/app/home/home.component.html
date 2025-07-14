@@ -1,0 +1,39 @@
+<div class="whole">
+  <div class="middle">
+    <div class="home">
+      <div class="header">
+        <div class="search-container">
+          <div class="search-box" [class.open]="isSearchOpen">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="What you Want To Eat..."
+              [(ngModel)]="searchValue"
+              (ngModelChange)="onSearchChange($event)"
+            />
+            <button class="search-btn" (click)="openSearch()">
+              🔍
+            </button>
+            <button class="close-btn" (click)="closeSearch()">
+              ✖
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cccontainer">
+      <div *ngFor="let x of meal" class="card">
+        <div 
+          class="card-image"
+          [ngStyle]="{
+            'background-image': 'url(' + x.strMealThumb + ')'
+          }">
+        </div>
+        <div class="card-detail">
+          <h1 class="card-title">{{ x.strMeal }}</h1>
+          <button type="button" class="btn btn-outline-success" (click)="increment(x)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
