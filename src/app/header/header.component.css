@@ -29,7 +29,7 @@
 /* CART CONTAINER */
 .cart-container{
     position: relative;
-    width: 200px;   /* space where cart will travel */
+    width: 400px;   /* space where cart will travel */
     height: 40px;
     overflow: hidden;
 }
