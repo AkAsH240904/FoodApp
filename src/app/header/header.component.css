@@ -29,7 +29,7 @@
 /* CART CONTAINER */
 .cart-container{
     position: relative;
-    width: 790px;   /* space where cart will travel */
+    width: 1100px;   /* space where cart will travel */
     height: 40px;
     overflow: hidden;
 }
@@ -64,7 +64,7 @@
     }
 
     100%{
-        left: 740px;   /* stops just before profile */
+        left: 1050px;   /* stops just before profile */
         transform: rotate(0deg);
     }
 
