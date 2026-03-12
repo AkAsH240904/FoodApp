@@ -13,21 +13,20 @@
 }
 
 /* brand */
-.brand-name {
+.brand-name{
     cursor: pointer;
-    font-weight: bolder;
 }
 
 /* cart container */
-.cart-container {
+.cart-container{
     position: relative;
-    width: 100%;
+    width: 300px;   /* fixed width so profile stays in same line */
     height: 40px;
     overflow: hidden;
 }
 
 /* cart icon */
-.logo {
+.logo{
     width: 34px;
     height: 34px;
     position: absolute;
@@ -37,54 +36,25 @@
 }
 
 /* profile icon */
-.profile-logo {
+.profile-logo{
     width: 34px;
     height: 34px;
     cursor: pointer;
 }
 
 /* animation */
-@keyframes move-cart {
-    0% {
-        left: -40px;
+@keyframes move-cart{
+    0%{
+        left:-40px;
     }
-    100% {
-        left: calc(100% - 34px);
+    100%{
+        left:260px; /* container width - icon width */
     }
 }
 
-/* container */
-.middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-/* dialog fixes */
-.custom-dialog-container {
-    position: fixed !important;
-    z-index: 1000 !important;
-}
-
-.dialog-backdrop {
-    background: rgba(0,0,0,0.5) !important;
-}
-
-/* responsive */
-@media (max-width:768px){
-
-    .nav{
-        padding:10px 15px;
-    }
-
-    .logo{
-        width:28px;
-        height:28px;
-    }
-
-    .profile-logo{
-        width:28px;
-        height:28px;
-    }
+.middle{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
 }
